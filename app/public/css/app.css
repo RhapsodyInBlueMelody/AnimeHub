@@ -1,0 +1,29 @@
+#animeList .list-group-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#animeList .anime-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 100%; /* Ensures the title takes a consistent portion of the space */
+}
+
+#animeList .anime-image {
+    flex-shrink: 0; /* Keeps image size consistent */
+}
+
+#animeList .d-flex.flex-wrap {
+    flex-shrink: 0; /* Prevent buttons from affecting the title width */
+}
+.animecarousel {
+    max-width: 1920px; /* Adjust the width as needed */
+    max-height: 500px; /* Adjust the height as needed */
+    margin: 0 auto; /* Center the image horizontally */
+    object-fit: cover; /* Keep image aspect ratio */
+}
+.carousel-item {
+    text-align: center; /* Center images inside the carousel */
+}
